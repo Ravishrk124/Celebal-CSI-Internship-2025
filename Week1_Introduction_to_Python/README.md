@@ -20,13 +20,14 @@ The focus this week was on:
 - Variables, Data Types, and Input/Output
 - Comments and indentation
 - Arithmetic operations and basic expressions
+- Printing 3 Types Of Triangles using "*"
+
 
 ---
 
 ## 📁 Files
 
-- `intro_to_python.ipynb`: Jupyter notebook with code examples and mini tasks.
-- `summary_notes.md`: Quick notes and concepts summary from this week.
+- `Assignment1_solution.py`: Colab notebook with code examples and mini tasks.
 
 ---
 
