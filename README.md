@@ -33,6 +33,3 @@ This will include:
 
 ---
 
-## 🧠 Learning Topics Covered
-
-### ✅ Week 1: Introduction to Python
