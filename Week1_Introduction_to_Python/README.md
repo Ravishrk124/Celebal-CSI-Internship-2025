@@ -32,7 +32,7 @@ The focus this week was on:
 
 ## 📆 Submission
 
-🕘 **Deadline**: June 9, 2025  
+🕘 **Deadline**: June 8, 2025  
 ✅ **Status**: Submitted
 
 > _"Week 1 gave me a strong foundation and clarity on why Python is a great language for both beginners and professionals."_
