@@ -1,97 +1,30 @@
-# Assignment 2 – Singly Linked List using OOP
-# Author: Ravish Kumar
+📘 Week 2 – Object-Oriented Programming in Python 🧱
 
-class Node:
-    """Represents a single node in a singly linked list."""
-    def __init__(self, data):
-        self.data = data
-        self.next = None
+📌 Overview
+This folder contains all the materials and assignments completed during Week 2 of the Celebal Summer Internship 2025. The main focus was on understanding and applying Object-Oriented Programming (OOP) concepts in Python through hands-on implementation.
 
-
-class LinkedList:
-    """Manages the singly linked list."""
-    def __init__(self):
-        self.head = None
-
-    def add_node(self, data):
-        """Add a node with given data to the end of the list."""
-        new_node = Node(data)
-        if not self.head:
-            self.head = new_node
-            return
-        temp = self.head
-        while temp.next:
-            temp = temp.next
-        temp.next = new_node
-
-    def print_list(self):
-        """Print all elements in the list."""
-        if not self.head:
-            print("The list is empty.")
-            return
-        temp = self.head
-        while temp:
-            print(temp.data, end=" -> ")
-            temp = temp.next
-        print("None")
-
-    def delete_nth_node(self, n):
-        """Delete the nth node (1-based index) from the list."""
-        if not self.head:
-            raise Exception("Cannot delete from an empty list.")
-
-        if n <= 0:
-            raise IndexError("Index must be a positive integer.")
-
-        if n == 1:
-            self.head = self.head.next
-            return
-
-        temp = self.head
-        count = 1
-
-        while temp and count < n - 1:
-            temp = temp.next
-            count += 1
-
-        if not temp or not temp.next:
-            raise IndexError("Index out of range.")
-
-        temp.next = temp.next.next
-
-
-# ----------------------------
-# 🧪 Test the LinkedList
-# ----------------------------
-
-if __name__ == "__main__":
-    print("✅ Creating Linked List:")
-    ll = LinkedList()
-
-    ll.add_node(10)
-    ll.add_node(20)
-    ll.add_node(30)
-    ll.add_node(40)
-
-    print("🔁 Initial List:")
-    ll.print_list()
-
-    print("\n❌ Deleting 3rd node...")
-    try:
-        ll.delete_nth_node(3)
-        ll.print_list()
-    except Exception as e:
-        print("Error:", e)
-
-    print("\n❌ Trying to delete 10th node (out of range)...")
-    try:
-        ll.delete_nth_node(10)
-    except Exception as e:
-        print("Error:", e)
-
-    print("\n❌ Trying to delete from empty list...")
-    try:
-        empty_list = LinkedList()
-        empty_list.delete_nth_node(1)
-    except Exception as e:
-        print("Error:", e)
+✅ Topics Covered
+Introduction to Object-Oriented Programming (OOP)
+Classes and Objects
+Constructors (__init__ method)
+self keyword
+Encapsulation
+Creating Custom Data Structures
+Exception Handling
+Assignment: Singly Linked List using OOP
+Create a Node class
+Create a LinkedList class
+Add node to the end
+Print the list
+Delete the nth node
+Handle errors for:
+Deletion from an empty list
+Invalid index
+📁 Files Included
+assignment2_linkedlist.py: Python file implementing a singly linked list using OOP concepts.
+week2_output.png: Screenshot of program output (optional, for verification).
+📆 Submission Details
+Deadline: June 15, 2025
+Status: ✅ Submitted
+💬 Reflection
+"This week helped me strengthen my understanding of object-oriented programming and how classes are used to build real-world data structures. Implementing a Linked List was a great hands-on experience."
